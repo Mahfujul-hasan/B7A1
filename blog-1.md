@@ -16,7 +16,7 @@ console.log(value.toFixed(2));
 
 here, `toFixed()` is only for number but "hello" is a string. typescript won't show an error. then it will crash on runtime.
 For this reason "any" is a "type safety hole".
----
+
 
 ## Why "unknown" is safer choice for handling unpredictable data:
 `unknown` is safer choice than "any" because while i am using unknown, it's says **I don't know its type, check type first**. 
@@ -40,7 +40,7 @@ if(typeof value === "string"){
 here typescript check *"is it a string?"* then give permission to apply string method. 
 
 > **Summary:** Use `unknown` over `any` whenever data is unpredictable. It keeps type safety intact by requiring explicit type checks before use.
----
+
 
 
 ## Explain the concept of type narrowing.
@@ -70,7 +70,7 @@ function printValue(value:string|number){
 
 ```
 Here, After checking  (`typeof value === "string"`) and (`typeof value === "number"`), typescript understand specific type and it is called the type narrowing.
----
+
 
 There are some common way of type narrowing: 
 1. typeof: it is use to check primitive type.
