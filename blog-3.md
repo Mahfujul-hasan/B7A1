@@ -1,7 +1,7 @@
 # How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 
 ## What are Generics?
-Generics is the concept of typescript. it is a feature that can help to create reusable class, function or components **without losing the type safety**.
+Generics is the concept of typescript. it is a feature that can help to create reusable class, function or components without losing the type safety.
 ---
 
 ## problem without generics:
@@ -13,7 +13,7 @@ function identity (value:any):any{
 }
 
 ```
-Here, typescript does not know the types of the result - this **breaks the type safety**.
+Here, typescript does not know the types of the result - this breaks the type safety.
 --- 
 
 ## using Generics:
@@ -25,11 +25,11 @@ function identity<T>(value:T):T{
 
 ```
 
-here, <T> is a **generic type parameter**.. here i can pass my required typed data. I can reuse this function for different types of data. Generics are more powerful because A function can be work for string, can be work for number or object or array.. and it will **maintain  the type safety**.
+here, <T> is a generic type parameter.. here i can pass my required typed data. I can reuse this function for different types of data. Generics are more powerful because A function can be work for string, can be work for number or object or array.. and it will maintain  the type safety.
 ---
 
 ## How Generics maintain type safety:
-Generics create a **connection between the input type and the output type**. it's means, Typescript remember the input type and use it in the function and return output with the specific type. for example:
+Generics create a connection between the input type and the output type. it's means, Typescript remember the input type and use it in the function and return output with the specific type. for example:
 
 ## Generics with Arrays:
 
